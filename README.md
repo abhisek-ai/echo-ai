@@ -48,3 +48,23 @@ Using DVC for data version control:
 dvc pull  # Get data
 dvc push  # Push data changes
 ```
+
+## Airflow DAG
+
+The pipeline is orchestrated using Apache Airflow with the following tasks:
+1. **acquire_data**: Fetches review data
+2. **preprocess_data**: Cleans and transforms text
+3. **feature_engineering**: Creates ML features
+4. **validate_data**: Checks data quality
+5. **detect_bias**: Analyzes data bias
+6. **detect_anomalies**: Finds outliers
+7. **generate_report**: Creates final report
+
+### Running with Airflow (Python 3.9-3.11 required)
+```bash
+airflow db init
+airflow dags list  # Should show review_processing_pipeline
+airflow dags trigger review_processing_pipeline
+```
+
+Note: Due to Python 3.13 compatibility issues, we provide `run_pipeline.py` as an alternative orchestrator.

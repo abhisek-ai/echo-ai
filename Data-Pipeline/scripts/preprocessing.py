@@ -1,91 +1,61 @@
-# Data-Pipeline/scripts/preprocessing.py
 import pandas as pd
 import numpy as np
 import re
 import logging
-from typing import Optional
+import os
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-def clean_text(text: str) -> str:
+def clean_text(text):
     """Clean and normalize review text"""
     if pd.isna(text):
         return ""
     
-    # Convert to string and lowercase
     text = str(text).lower()
-    
-    # Remove URLs
     text = re.sub(r'http\S+|www.\S+', '', text)
-    
-    # Remove HTML tags
-    text = re.sub(r'<.*?>', '', text)
-    
-    # Remove special characters but keep spaces and basic punctuation
     text = re.sub(r'[^a-zA-Z0-9\s.,!?]', '', text)
-    
-    # Remove extra whitespace
     text = ' '.join(text.split())
     
     return text.strip()
 
-def handle_missing_values(df: pd.DataFrame) -> pd.DataFrame:
+def handle_missing_values(df):
     """Handle missing values in the dataset"""
-    logger.info(f"Missing values before handling: {df.isnull().sum().sum()}")
-    
-    # Fill missing text with empty string
     if 'text' in df.columns:
         df['text'] = df['text'].fillna('')
     
-    # Fill missing ratings with median
     if 'rating' in df.columns:
         df['rating'] = df['rating'].fillna(df['rating'].median())
     
-    # Fill missing votes with 0
     vote_columns = ['useful_votes', 'funny_votes', 'cool_votes']
     for col in vote_columns:
         if col in df.columns:
             df[col] = df[col].fillna(0)
     
-    # Drop rows with missing review_id
     if 'review_id' in df.columns:
         df = df.dropna(subset=['review_id'])
     
-    logger.info(f"Missing values after handling: {df.isnull().sum().sum()}")
     return df
 
-def preprocess_data(input_path: str = 'data/raw/synthetic_reviews.csv',
-                   output_path: str = 'data/processed/clean_reviews.csv') -> pd.DataFrame:
+def preprocess_data(input_path='data/raw/synthetic_reviews.csv',
+                   output_path='data/processed/clean_reviews.csv'):
     """Main preprocessing pipeline"""
     try:
-        # Load data
         logger.info(f"Loading data from {input_path}")
         df = pd.read_csv(input_path)
         logger.info(f"Loaded {len(df)} reviews")
         
-        # Handle missing values
         df = handle_missing_values(df)
         
-        # Clean text
         logger.info("Cleaning text...")
         df['cleaned_text'] = df['text'].apply(clean_text)
         
-        # Remove empty reviews after cleaning
         df = df[df['cleaned_text'].str.len() > 0]
         
-        # Add text statistics
         df['text_length'] = df['cleaned_text'].str.len()
         df['word_count'] = df['cleaned_text'].str.split().str.len()
-        df['avg_word_length'] = df['cleaned_text'].apply(
-            lambda x: np.mean([len(word) for word in x.split()]) if x else 0
-        )
         
-        # Normalize numerical features
-        if 'useful_votes' in df.columns:
-            df['useful_votes_normalized'] = (df['useful_votes'] - df['useful_votes'].mean()) / df['useful_votes'].std()
-        
-        # Save processed data
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
         df.to_csv(output_path, index=False)
         logger.info(f"Saved {len(df)} processed reviews to {output_path}")
         

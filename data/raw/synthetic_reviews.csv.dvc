@@ -1,0 +1,5 @@
+outs:
+- md5: 095a5554ebbc0f697741d36872cdcfd4
+  size: 543210
+  hash: md5
+  path: synthetic_reviews.csv

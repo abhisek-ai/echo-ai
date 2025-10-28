@@ -1,0 +1,153 @@
+{
+  "file_path": "data/processed/clean_reviews.csv",
+  "total_records": 4950,
+  "total_columns": 16,
+  "column_names": [
+    "review_id",
+    "business_id",
+    "user_id",
+    "text",
+    "rating",
+    "date",
+    "useful_votes",
+    "funny_votes",
+    "cool_votes",
+    "text_length",
+    "business_category",
+    "has_owner_response",
+    "platform",
+    "sentiment_label",
+    "cleaned_text",
+    "word_count"
+  ],
+  "data_types": {
+    "review_id": {
+      "expected": "object",
+      "actual": "object",
+      "valid": true
+    },
+    "rating": {
+      "expected": "int64",
+      "actual": "int64",
+      "valid": true
+    },
+    "text": {
+      "expected": "object",
+      "actual": "object",
+      "valid": true
+    },
+    "useful_votes": {
+      "expected": "int64",
+      "actual": "int64",
+      "valid": true
+    }
+  },
+  "data_ranges": {
+    "rating": {
+      "min": "1",
+      "max": "5",
+      "valid": "True",
+      "out_of_range_count": 0
+    },
+    "text_length": {
+      "min": "12",
+      "max": "60",
+      "mean": 34.216565656565656,
+      "empty_count": 0
+    },
+    "useful_votes": {
+      "negative_count": 0,
+      "valid": "True"
+    }
+  },
+  "missing_values": {
+    "review_id": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": true
+    },
+    "business_id": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "user_id": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "text": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": true
+    },
+    "rating": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": true
+    },
+    "date": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "useful_votes": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "funny_votes": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "cool_votes": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "text_length": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "business_category": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "has_owner_response": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "platform": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "sentiment_label": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "cleaned_text": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "word_count": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    }
+  },
+  "duplicates": {
+    "duplicate_review_ids": 0,
+    "duplicate_texts": 4950,
+    "exact_duplicates": 0
+  },
+  "validation_timestamp": "2025-10-28T01:15:06.730740",
+  "validation_passed": true,
+  "issues": []
+}
