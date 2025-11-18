@@ -1,0 +1,6 @@
+artifact_location: file:///E:/Masters/MLOps/echo-ai/Model-Pipeline/mlruns/684566604413347688
+creation_time: 1763457084038
+experiment_id: '684566604413347688'
+last_update_time: 1763457084038
+lifecycle_stage: active
+name: echoai_sentiment_analysis

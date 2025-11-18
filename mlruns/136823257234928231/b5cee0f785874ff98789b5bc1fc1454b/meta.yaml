@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/b5cee0f785874ff98789b5bc1fc1454b/artifacts
+end_time: 1763458146293
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: b5cee0f785874ff98789b5bc1fc1454b
+run_name: carefree-toad-762
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458146242
+status: 3
+tags: []
+user_id: hp

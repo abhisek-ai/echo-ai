@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/d3837ac917184bb4a78c5b7c9dcb3d03/artifacts
+end_time: 1763458144923
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: d3837ac917184bb4a78c5b7c9dcb3d03
+run_name: grandiose-hound-33
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458144874
+status: 3
+tags: []
+user_id: hp

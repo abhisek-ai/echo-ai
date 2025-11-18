@@ -1,26 +1,26 @@
 # Bias Detection Report
 
-Generated on: 2025-10-28 01:15:06
+Generated on: 2025-11-18 02:00:28
 
 ## Rating Distribution Analysis
 
-- Mean Rating: 3.53
-- Positive Review Ratio: 56.4%
-- Negative Review Ratio: 23.7%
+- Mean Rating: 3.49
+- Positive Review Ratio: 56.5%
+- Negative Review Ratio: 25.9%
 - **Bias Status**: No significant bias detected
 
 ## Categorical Bias Analysis
 
 ### text_length_bias
 ### business_category_bias
-- Imbalance Ratio: 1.04
-- Most Common: Hotel
-- Least Common: Automotive
+- Imbalance Ratio: 1.11
+- Most Common: Restaurant
+- Least Common: Healthcare
 
 ### platform_bias
-- Imbalance Ratio: 1.07
-- Most Common: Google
-- Least Common: Yelp
+- Imbalance Ratio: 1.02
+- Most Common: Yelp
+- Least Common: Facebook
 
 ## Mitigation Recommendations
 

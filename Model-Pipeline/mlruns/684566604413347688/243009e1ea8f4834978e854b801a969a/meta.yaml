@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/Model-Pipeline/mlruns/684566604413347688/243009e1ea8f4834978e854b801a969a/artifacts
+end_time: 1763457755132
+entry_point_name: ''
+experiment_id: '684566604413347688'
+lifecycle_stage: active
+run_id: 243009e1ea8f4834978e854b801a969a
+run_name: LinearSVC_20251118_042231
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763457751497
+status: 3
+tags: []
+user_id: hp

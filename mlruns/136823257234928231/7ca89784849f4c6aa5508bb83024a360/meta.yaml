@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/7ca89784849f4c6aa5508bb83024a360/artifacts
+end_time: 1763458134630
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: 7ca89784849f4c6aa5508bb83024a360
+run_name: serious-elk-884
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458134575
+status: 3
+tags: []
+user_id: hp

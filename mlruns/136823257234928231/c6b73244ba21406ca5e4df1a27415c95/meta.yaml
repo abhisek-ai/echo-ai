@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/c6b73244ba21406ca5e4df1a27415c95/artifacts
+end_time: 1763458142055
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: c6b73244ba21406ca5e4df1a27415c95
+run_name: dashing-mule-972
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458142006
+status: 3
+tags: []
+user_id: hp

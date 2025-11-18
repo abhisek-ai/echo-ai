@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/dbe33f8d0394422ca28bb29950e888ad/artifacts
+end_time: 1763458144438
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: dbe33f8d0394422ca28bb29950e888ad
+run_name: redolent-gnat-780
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458144397
+status: 3
+tags: []
+user_id: hp

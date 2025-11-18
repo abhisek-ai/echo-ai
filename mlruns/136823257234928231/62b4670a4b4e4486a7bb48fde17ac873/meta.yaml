@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/62b4670a4b4e4486a7bb48fde17ac873/artifacts
+end_time: 1763458143020
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: 62b4670a4b4e4486a7bb48fde17ac873
+run_name: big-smelt-550
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458142973
+status: 3
+tags: []
+user_id: hp

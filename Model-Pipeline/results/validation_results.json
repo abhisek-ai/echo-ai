@@ -1,0 +1,79 @@
+{
+  "metrics": {
+    "accuracy": 1.0,
+    "negative_precision": 1.0,
+    "negative_recall": 1.0,
+    "negative_f1": 1.0,
+    "negative_support": 256,
+    "neutral_precision": 1.0,
+    "neutral_recall": 1.0,
+    "neutral_f1": 1.0,
+    "neutral_support": 175,
+    "positive_precision": 1.0,
+    "positive_recall": 1.0,
+    "positive_f1": 1.0,
+    "positive_support": 559,
+    "weighted_precision": 1.0,
+    "weighted_recall": 1.0,
+    "weighted_f1": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "negative_auc": 1.0,
+    "neutral_auc": 1.0,
+    "positive_auc": 1.0,
+    "macro_auc": 1.0,
+    "weighted_auc": 1.0
+  },
+  "classification_report": {
+    "negative": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 256.0
+    },
+    "neutral": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 175.0
+    },
+    "positive": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 559.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 990.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 990.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      256,
+      0,
+      0
+    ],
+    [
+      0,
+      175,
+      0
+    ],
+    [
+      0,
+      0,
+      559
+    ]
+  ],
+  "error_samples": []
+}

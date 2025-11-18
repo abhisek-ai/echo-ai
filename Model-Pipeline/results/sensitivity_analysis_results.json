@@ -1,0 +1,693 @@
+{
+  "timestamp": "2025-11-18T04:36:49.058599",
+  "analyses_performed": [
+    "feature_importance",
+    "shap",
+    "lime",
+    "confidence",
+    "hyperparameter_sensitivity"
+  ],
+  "feature_importance": {
+    "negative_positive": [
+      {
+        "feature": "terrible",
+        "importance": 1.9034178466619347
+      },
+      {
+        "feature": "awful",
+        "importance": 1.9034178466619347
+      },
+      {
+        "feature": "not",
+        "importance": 1.7483922439450885
+      },
+      {
+        "feature": "worst experience ever",
+        "importance": 1.645758940714568
+      },
+      {
+        "feature": "worst experience",
+        "importance": 1.645758940714568
+      },
+      {
+        "feature": "worst",
+        "importance": 1.645758940714568
+      },
+      {
+        "feature": "complete",
+        "importance": 1.5810794754525699
+      },
+      {
+        "feature": "complete disaster",
+        "importance": 1.5810794754525699
+      },
+      {
+        "feature": "disaster",
+        "importance": 1.5810794754525699
+      },
+      {
+        "feature": "would not recommend",
+        "importance": 1.3153427197090795
+      },
+      {
+        "feature": "would not",
+        "importance": 1.3153427197090795
+      },
+      {
+        "feature": "not recommend",
+        "importance": 1.3153427197090795
+      },
+      {
+        "feature": "with",
+        "importance": 1.2327618148003898
+      },
+      {
+        "feature": "poor",
+        "importance": 1.2327618148003898
+      },
+      {
+        "feature": "disappointed",
+        "importance": 1.2327618148003898
+      },
+      {
+        "feature": "disappointed with",
+        "importance": 1.2327618148003898
+      },
+      {
+        "feature": "disappointed with the",
+        "importance": 1.2327618148003898
+      },
+      {
+        "feature": "with the",
+        "importance": 1.2327618148003898
+      },
+      {
+        "feature": "not worth it",
+        "importance": 0.7778756837284087
+      },
+      {
+        "feature": "not worth",
+        "importance": 0.7778756837284087
+      }
+    ],
+    "negative_negative": [
+      {
+        "feature": "was",
+        "importance": -1.9891773784318945
+      },
+      {
+        "feature": "good",
+        "importance": -1.1390573032653093
+      },
+      {
+        "feature": "average",
+        "importance": -1.0063425767638923
+      },
+      {
+        "feature": "was okay average",
+        "importance": -1.0063425767638923
+      },
+      {
+        "feature": "was okay",
+        "importance": -1.0063425767638923
+      },
+      {
+        "feature": "okay average",
+        "importance": -1.0063425767638923
+      },
+      {
+        "feature": "okay",
+        "importance": -1.0063425767638923
+      },
+      {
+        "feature": "fine",
+        "importance": -0.9720479269941209
+      },
+      {
+        "feature": "it was",
+        "importance": -0.9720479269941209
+      },
+      {
+        "feature": "was fine",
+        "importance": -0.9720479269941209
+      },
+      {
+        "feature": "it was fine",
+        "importance": -0.9720479269941209
+      },
+      {
+        "feature": "good experience",
+        "importance": -0.8576041891010797
+      },
+      {
+        "feature": "the",
+        "importance": -0.84538578460021
+      },
+      {
+        "feature": "ever highly",
+        "importance": -0.8149305076998025
+      },
+      {
+        "feature": "best experience",
+        "importance": -0.8149305076998025
+      },
+      {
+        "feature": "best experience ever",
+        "importance": -0.8149305076998025
+      },
+      {
+        "feature": "experience ever highly",
+        "importance": -0.8149305076998025
+      },
+      {
+        "feature": "ever highly recommend",
+        "importance": -0.8149305076998025
+      },
+      {
+        "feature": "highly recommend",
+        "importance": -0.8149305076998025
+      },
+      {
+        "feature": "highly",
+        "importance": -0.8149305076998025
+      }
+    ],
+    "neutral_positive": [
+      {
+        "feature": "okay average",
+        "importance": 2.0233778541123044
+      },
+      {
+        "feature": "okay",
+        "importance": 2.0233778541123044
+      },
+      {
+        "feature": "was okay",
+        "importance": 2.0233778541123044
+      },
+      {
+        "feature": "was okay average",
+        "importance": 2.0233778541123044
+      },
+      {
+        "feature": "average",
+        "importance": 2.0233778541123044
+      },
+      {
+        "feature": "it was",
+        "importance": 1.9022749494735924
+      },
+      {
+        "feature": "was fine",
+        "importance": 1.9022749494735924
+      },
+      {
+        "feature": "fine",
+        "importance": 1.9022749494735924
+      },
+      {
+        "feature": "it was fine",
+        "importance": 1.9022749494735924
+      },
+      {
+        "feature": "was",
+        "importance": 1.6181286476906918
+      },
+      {
+        "feature": "special but",
+        "importance": 1.4168593264876277
+      },
+      {
+        "feature": "special but decent",
+        "importance": 1.4168593264876277
+      },
+      {
+        "feature": "nothing special but",
+        "importance": 1.4168593264876277
+      },
+      {
+        "feature": "nothing special",
+        "importance": 1.4168593264876277
+      },
+      {
+        "feature": "nothing",
+        "importance": 1.4168593264876277
+      },
+      {
+        "feature": "but decent",
+        "importance": 1.4168593264876277
+      },
+      {
+        "feature": "decent",
+        "importance": 1.4168593264876277
+      },
+      {
+        "feature": "but",
+        "importance": 1.4168593264876277
+      },
+      {
+        "feature": "special",
+        "importance": 1.4168593264876277
+      },
+      {
+        "feature": "it",
+        "importance": 1.3633750919076901
+      }
+    ],
+    "neutral_negative": [
+      {
+        "feature": "awful",
+        "importance": -0.6824819399088292
+      },
+      {
+        "feature": "terrible",
+        "importance": -0.6824819399088292
+      },
+      {
+        "feature": "good",
+        "importance": -0.666662579060338
+      },
+      {
+        "feature": "not",
+        "importance": -0.6435496267026227
+      },
+      {
+        "feature": "experience",
+        "importance": -0.6345189933808033
+      },
+      {
+        "feature": "disaster",
+        "importance": -0.6111190493568771
+      },
+      {
+        "feature": "complete disaster",
+        "importance": -0.6111190493568771
+      },
+      {
+        "feature": "complete",
+        "importance": -0.6111190493568771
+      },
+      {
+        "feature": "ever",
+        "importance": -0.5906252284598847
+      },
+      {
+        "feature": "experience ever",
+        "importance": -0.5906252284598847
+      },
+      {
+        "feature": "would",
+        "importance": -0.568599694551488
+      },
+      {
+        "feature": "recommend",
+        "importance": -0.5527675500420167
+      },
+      {
+        "feature": "disappointed with the",
+        "importance": -0.48446433936297273
+      },
+      {
+        "feature": "with the",
+        "importance": -0.48446433936297273
+      },
+      {
+        "feature": "with",
+        "importance": -0.48446433936297273
+      },
+      {
+        "feature": "disappointed",
+        "importance": -0.48446433936297273
+      },
+      {
+        "feature": "poor",
+        "importance": -0.48446433936297273
+      },
+      {
+        "feature": "disappointed with",
+        "importance": -0.48446433936297273
+      },
+      {
+        "feature": "excellent",
+        "importance": -0.48156374881877684
+      },
+      {
+        "feature": "absolutely",
+        "importance": -0.48156374881877684
+      }
+    ],
+    "positive_positive": [
+      {
+        "feature": "good",
+        "importance": 1.8057198823256484
+      },
+      {
+        "feature": "good experience",
+        "importance": 1.3108113472803404
+      },
+      {
+        "feature": "amazing",
+        "importance": 1.1910523405823348
+      },
+      {
+        "feature": "was excellent",
+        "importance": 1.1910523405823348
+      },
+      {
+        "feature": "excellent",
+        "importance": 1.1910523405823348
+      },
+      {
+        "feature": "absolutely",
+        "importance": 1.1910523405823348
+      },
+      {
+        "feature": "absolutely amazing",
+        "importance": 1.1910523405823348
+      },
+      {
+        "feature": "experience overall",
+        "importance": 1.1792851253255887
+      },
+      {
+        "feature": "good experience overall",
+        "importance": 1.1792851253255887
+      },
+      {
+        "feature": "overall",
+        "importance": 1.1792851253255887
+      },
+      {
+        "feature": "highly recommend",
+        "importance": 1.1063873378297342
+      },
+      {
+        "feature": "best experience",
+        "importance": 1.1063873378297342
+      },
+      {
+        "feature": "best experience ever",
+        "importance": 1.1063873378297342
+      },
+      {
+        "feature": "best",
+        "importance": 1.1063873378297342
+      },
+      {
+        "feature": "ever highly",
+        "importance": 1.1063873378297342
+      },
+      {
+        "feature": "ever highly recommend",
+        "importance": 1.1063873378297342
+      },
+      {
+        "feature": "highly",
+        "importance": 1.1063873378297342
+      },
+      {
+        "feature": "experience ever highly",
+        "importance": 1.1063873378297342
+      },
+      {
+        "feature": "was great",
+        "importance": 1.0827222699501404
+      },
+      {
+        "feature": "great",
+        "importance": 1.0827222699501404
+      }
+    ],
+    "positive_negative": [
+      {
+        "feature": "terrible",
+        "importance": -1.220935906753106
+      },
+      {
+        "feature": "awful",
+        "importance": -1.220935906753106
+      },
+      {
+        "feature": "worst",
+        "importance": -1.1764977122660678
+      },
+      {
+        "feature": "worst experience",
+        "importance": -1.1764977122660678
+      },
+      {
+        "feature": "worst experience ever",
+        "importance": -1.1764977122660678
+      },
+      {
+        "feature": "it",
+        "importance": -1.1359595802896727
+      },
+      {
+        "feature": "not",
+        "importance": -1.1048426172424657
+      },
+      {
+        "feature": "was okay average",
+        "importance": -1.0170352773484101
+      },
+      {
+        "feature": "was okay",
+        "importance": -1.0170352773484101
+      },
+      {
+        "feature": "average",
+        "importance": -1.0170352773484101
+      },
+      {
+        "feature": "okay average",
+        "importance": -1.0170352773484101
+      },
+      {
+        "feature": "okay",
+        "importance": -1.0170352773484101
+      },
+      {
+        "feature": "disaster",
+        "importance": -0.9699604260956898
+      },
+      {
+        "feature": "complete disaster",
+        "importance": -0.9699604260956898
+      },
+      {
+        "feature": "complete",
+        "importance": -0.9699604260956898
+      },
+      {
+        "feature": "fine",
+        "importance": -0.9302270224794812
+      },
+      {
+        "feature": "it was fine",
+        "importance": -0.9302270224794812
+      },
+      {
+        "feature": "it was",
+        "importance": -0.9302270224794812
+      },
+      {
+        "feature": "was fine",
+        "importance": -0.9302270224794812
+      },
+      {
+        "feature": "not recommend",
+        "importance": -0.8983471518634436
+      }
+    ],
+    "overall_top_features": [
+      {
+        "feature": "was okay",
+        "importance": 1.3489185694082024
+      },
+      {
+        "feature": "average",
+        "importance": 1.3489185694082024
+      },
+      {
+        "feature": "okay average",
+        "importance": 1.3489185694082024
+      },
+      {
+        "feature": "okay",
+        "importance": 1.3489185694082024
+      },
+      {
+        "feature": "was okay average",
+        "importance": 1.3489185694082024
+      },
+      {
+        "feature": "was",
+        "importance": 1.3261182522879322
+      },
+      {
+        "feature": "terrible",
+        "importance": 1.2689452311079565
+      },
+      {
+        "feature": "awful",
+        "importance": 1.2689452311079565
+      },
+      {
+        "feature": "was fine",
+        "importance": 1.268183299649065
+      },
+      {
+        "feature": "it was",
+        "importance": 1.268183299649065
+      },
+      {
+        "feature": "it was fine",
+        "importance": 1.268183299649065
+      },
+      {
+        "feature": "fine",
+        "importance": 1.268183299649065
+      },
+      {
+        "feature": "good",
+        "importance": 1.2038132548837652
+      },
+      {
+        "feature": "not",
+        "importance": 1.1655948292967258
+      },
+      {
+        "feature": "worst",
+        "importance": 1.0971726271430446
+      },
+      {
+        "feature": "worst experience",
+        "importance": 1.0971726271430446
+      },
+      {
+        "feature": "worst experience ever",
+        "importance": 1.0971726271430446
+      },
+      {
+        "feature": "complete",
+        "importance": 1.0540529836350456
+      },
+      {
+        "feature": "disaster",
+        "importance": 1.0540529836350456
+      },
+      {
+        "feature": "complete disaster",
+        "importance": 1.0540529836350456
+      },
+      {
+        "feature": "nothing special but",
+        "importance": 0.9445728843250848
+      },
+      {
+        "feature": "nothing special",
+        "importance": 0.9445728843250848
+      },
+      {
+        "feature": "nothing",
+        "importance": 0.9445728843250848
+      },
+      {
+        "feature": "special",
+        "importance": 0.9445728843250848
+      },
+      {
+        "feature": "special but",
+        "importance": 0.9445728843250848
+      },
+      {
+        "feature": "special but decent",
+        "importance": 0.9445728843250848
+      },
+      {
+        "feature": "decent",
+        "importance": 0.9445728843250848
+      },
+      {
+        "feature": "but",
+        "importance": 0.9445728843250848
+      },
+      {
+        "feature": "but decent",
+        "importance": 0.9445728843250848
+      },
+      {
+        "feature": "it",
+        "importance": 0.9089167279384597
+      }
+    ]
+  },
+  "lime_example": {
+    "text": "Perfect in every way. Outstanding service.",
+    "explanation": [
+      [
+        "way",
+        -0.01698936406804805
+      ],
+      [
+        "every",
+        -0.016789631740311933
+      ],
+      [
+        "Outstanding",
+        -0.015964512364192246
+      ],
+      [
+        "in",
+        -0.015620859166284468
+      ],
+      [
+        "Perfect",
+        -0.011456178006736586
+      ],
+      [
+        "service",
+        -0.008737186290113268
+      ]
+    ]
+  },
+  "confidence_analysis": {
+    "overall_mean_confidence": 0.9806404318821844,
+    "correct_mean_confidence": 0.9806404318821844,
+    "incorrect_mean_confidence": null,
+    "low_confidence_threshold": 0.5,
+    "low_confidence_samples": 0,
+    "high_confidence_threshold": 0.9,
+    "high_confidence_samples": 990
+  },
+  "hyperparameter_sensitivity": {
+    "parameter": "C",
+    "results": [
+      {
+        "param_value": 0.001,
+        "f1_score": 1.0
+      },
+      {
+        "param_value": 0.01,
+        "f1_score": 1.0
+      },
+      {
+        "param_value": 0.1,
+        "f1_score": 1.0
+      },
+      {
+        "param_value": 1,
+        "f1_score": 1.0
+      },
+      {
+        "param_value": 10,
+        "f1_score": 1.0
+      },
+      {
+        "param_value": 100,
+        "f1_score": 1.0
+      }
+    ]
+  }
+}

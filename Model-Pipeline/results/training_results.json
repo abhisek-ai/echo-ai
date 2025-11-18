@@ -1,0 +1,12 @@
+{
+  "best_model": "LogisticRegression",
+  "best_f1_score": 1.0,
+  "model_scores": {
+    "LogisticRegression": 1.0,
+    "RandomForest": 1.0,
+    "GradientBoosting": 1.0,
+    "LinearSVC": 1.0,
+    "MultinomialNB": 1.0
+  },
+  "timestamp": "2025-11-18T04:22:38.911376"
+}

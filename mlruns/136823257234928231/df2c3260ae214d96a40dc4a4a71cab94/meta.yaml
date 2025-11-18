@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/df2c3260ae214d96a40dc4a4a71cab94/artifacts
+end_time: 1763458142936
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: df2c3260ae214d96a40dc4a4a71cab94
+run_name: welcoming-mink-968
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458142882
+status: 3
+tags: []
+user_id: hp
