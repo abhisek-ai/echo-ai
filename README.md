@@ -142,3 +142,6 @@ python3 Data-Pipeline/tests/test_preprocessing.py
 
 ## Contact
 For questions about this pipeline, please contact the team through the GitHub repository issues.
+
+## Screenshots
+![Run Image](screenshots/1.png)
