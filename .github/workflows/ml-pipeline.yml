@@ -70,7 +70,7 @@ jobs:
           fi
       
       - name: Upload data artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: processed-data
           path: |
@@ -102,7 +102,7 @@ jobs:
         run: pip install -r requirements.txt
       
       - name: Download processed data
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: processed-data
           path: Data-Pipeline/scripts/data/
@@ -127,7 +127,7 @@ jobs:
           fi
       
       - name: Upload model artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: trained-models
           path: |
@@ -157,13 +157,13 @@ jobs:
         run: pip install -r requirements.txt
       
       - name: Download artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: trained-models
           path: Model-Pipeline/
       
       - name: Download data
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: processed-data
           path: Data-Pipeline/scripts/data/
@@ -209,13 +209,13 @@ jobs:
         run: pip install -r requirements.txt
       
       - name: Download artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: trained-models
           path: Model-Pipeline/
       
       - name: Download data
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: processed-data
           path: Data-Pipeline/scripts/data/
@@ -282,7 +282,7 @@ jobs:
         uses: google-github-actions/setup-gcloud@v1
       
       - name: Download models
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: trained-models
           path: Model-Pipeline/
