@@ -6,7 +6,7 @@ from pathlib import Path
 
 # Base paths
 BASE_DIR = Path(__file__).parent
-DATA_DIR = BASE_DIR.parent / 'data'
+DATA_DIR = BASE_DIR.parent / 'Data-Pipeline' / 'scripts' / 'data'
 MODEL_DIR = BASE_DIR / 'models'
 RESULTS_DIR = BASE_DIR / 'results'
 LOGS_DIR = BASE_DIR / 'logs'
@@ -20,7 +20,7 @@ BEST_MODEL_PATH = MODEL_DIR / 'best_model.pkl'
 VECTORIZER_PATH = MODEL_DIR / 'tfidf_vectorizer.pkl'
 
 # MLflow settings
-MLFLOW_TRACKING_URI = 'mlruns'
+MLFLOW_TRACKING_URI = str(BASE_DIR / 'mlruns')
 MLFLOW_EXPERIMENT_NAME = 'echoai_sentiment_analysis'
 
 # Model parameters
