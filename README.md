@@ -1,4 +1,4 @@
-# EchoAI Data Pipeline - MLOps Assignment
+# EchoAI Model Development- MLOps Assignment
 
 ## Team Members
 - Abhisek Mallick
