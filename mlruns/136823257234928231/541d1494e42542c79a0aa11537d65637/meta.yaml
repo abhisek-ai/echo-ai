@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/541d1494e42542c79a0aa11537d65637/artifacts
+end_time: 1763458144360
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: 541d1494e42542c79a0aa11537d65637
+run_name: delicate-ray-158
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458144308
+status: 3
+tags: []
+user_id: hp

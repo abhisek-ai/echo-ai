@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/910f2f6c6e6f46058131ef8af89e82ca/artifacts
+end_time: 1763458144721
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: 910f2f6c6e6f46058131ef8af89e82ca
+run_name: funny-squirrel-78
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458144667
+status: 3
+tags: []
+user_id: hp

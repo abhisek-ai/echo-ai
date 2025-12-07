@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/c9dd559754a448339186b0c39a520380/artifacts
+end_time: 1763458139742
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: c9dd559754a448339186b0c39a520380
+run_name: charming-turtle-346
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458139696
+status: 3
+tags: []
+user_id: hp

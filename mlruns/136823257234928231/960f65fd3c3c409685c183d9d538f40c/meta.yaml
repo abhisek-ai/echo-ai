@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/960f65fd3c3c409685c183d9d538f40c/artifacts
+end_time: 1763458145108
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: 960f65fd3c3c409685c183d9d538f40c
+run_name: loud-perch-901
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458145055
+status: 3
+tags: []
+user_id: hp

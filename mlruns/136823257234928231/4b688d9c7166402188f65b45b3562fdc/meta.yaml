@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/4b688d9c7166402188f65b45b3562fdc/artifacts
+end_time: 1763458135514
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: 4b688d9c7166402188f65b45b3562fdc
+run_name: industrious-boar-145
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458135469
+status: 3
+tags: []
+user_id: hp

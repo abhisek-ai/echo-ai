@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/6ccbc031bd84431b81a10fc75ce3e3a8/artifacts
+end_time: 1763458145364
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: 6ccbc031bd84431b81a10fc75ce3e3a8
+run_name: chill-skink-125
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458145316
+status: 3
+tags: []
+user_id: hp

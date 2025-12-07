@@ -1,0 +1,91 @@
+{
+  "duplicates": {
+    "exact_duplicate_count": 2,
+    "duplicate_text_count": 384,
+    "duplicate_indices": {
+      "exact": [
+        653,
+        694
+      ],
+      "text": [
+        114,
+        117,
+        122,
+        124,
+        127,
+        128,
+        130,
+        134,
+        135,
+        137
+      ]
+    }
+  },
+  "numeric_outliers": {
+    "text_length_outliers": {
+      "count": 21,
+      "indices": [
+        4,
+        103,
+        156,
+        172,
+        186,
+        225,
+        452,
+        485,
+        504,
+        516
+      ],
+      "description": "Detected outliers in text_length"
+    },
+    "restaurant_avg_rating_outliers": {
+      "count": 2,
+      "indices": [
+        112,
+        113
+      ],
+      "description": "Detected outliers in restaurant_avg_rating"
+    }
+  },
+  "suspicious_patterns": [
+    {
+      "type": "very_short_reviews",
+      "count": 27,
+      "indices": [
+        141,
+        150,
+        256,
+        302,
+        344,
+        366,
+        368,
+        369,
+        401,
+        403
+      ],
+      "description": "Reviews with <10 characters"
+    },
+    {
+      "type": "repeated_templates",
+      "examples": [
+        "a very good experience overall.",
+        "an average, neutral experience.",
+        "this was the worst experience ive had.",
+        "a belowaverage experience. could be better."
+      ],
+      "description": "Short repeated template-like review texts"
+    }
+  ],
+  "missing_patterns": {
+    "reviewText": {
+      "missing_count": "1",
+      "missing_percentage": 0.1,
+      "missing_indices": [
+        256
+      ]
+    }
+  },
+  "date_anomalies": {},
+  "rating_anomalies": {},
+  "detection_timestamp": "2025-12-06T07:51:02.550761"
+}

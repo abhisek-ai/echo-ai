@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/05247f9c55a04e1983dd39fb635959ee/artifacts
+end_time: 1763458145188
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: 05247f9c55a04e1983dd39fb635959ee
+run_name: omniscient-worm-333
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458145146
+status: 3
+tags: []
+user_id: hp

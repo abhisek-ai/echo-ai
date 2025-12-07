@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/a8d6196b794241a991fcbef51183b49e/artifacts
+end_time: 1763458138146
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: a8d6196b794241a991fcbef51183b49e
+run_name: selective-horse-702
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458138095
+status: 3
+tags: []
+user_id: hp

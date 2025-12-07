@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/5edad2023ce64931be07b24faf1b75ea/artifacts
+end_time: 1763458145958
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: 5edad2023ce64931be07b24faf1b75ea
+run_name: big-lark-566
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458145909
+status: 3
+tags: []
+user_id: hp

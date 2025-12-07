@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/6bf27410eb7b44dc98169cc3e8693888/artifacts
+end_time: 1763458141492
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: 6bf27410eb7b44dc98169cc3e8693888
+run_name: chill-boar-692
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458141369
+status: 3
+tags: []
+user_id: hp

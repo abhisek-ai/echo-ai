@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/d93fedfa1ab74dc2a684f787ae515af0/artifacts
+end_time: 1763458135640
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: d93fedfa1ab74dc2a684f787ae515af0
+run_name: luxuriant-shoat-281
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458135589
+status: 3
+tags: []
+user_id: hp

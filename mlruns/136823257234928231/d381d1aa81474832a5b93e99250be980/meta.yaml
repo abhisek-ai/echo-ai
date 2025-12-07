@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/d381d1aa81474832a5b93e99250be980/artifacts
+end_time: 1763458135798
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: d381d1aa81474832a5b93e99250be980
+run_name: zealous-mole-836
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458135753
+status: 3
+tags: []
+user_id: hp

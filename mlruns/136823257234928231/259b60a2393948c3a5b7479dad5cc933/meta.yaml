@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231/259b60a2393948c3a5b7479dad5cc933/artifacts
+end_time: 1763458133633
+entry_point_name: ''
+experiment_id: '136823257234928231'
+lifecycle_stage: active
+run_id: 259b60a2393948c3a5b7479dad5cc933
+run_name: rumbling-shrew-223
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763458133576
+status: 3
+tags: []
+user_id: hp

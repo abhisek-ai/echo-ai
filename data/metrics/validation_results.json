@@ -1,0 +1,101 @@
+{
+  "validation_passed": false,
+  "type_checks": {
+    "reviewRating": {
+      "expected": "int64",
+      "actual": "int64",
+      "valid": true
+    },
+    "reviewText": {
+      "expected": "object",
+      "actual": "object",
+      "valid": true
+    },
+    "text_length": {
+      "expected": "int64",
+      "actual": "int64",
+      "valid": true
+    },
+    "restaurant_avg_rating": {
+      "expected": "float64",
+      "actual": "float64",
+      "valid": true
+    },
+    "sentiment": {
+      "expected": "object",
+      "actual": "object",
+      "valid": true
+    }
+  },
+  "range_checks": {
+    "reviewRating": {
+      "min": 1,
+      "max": 5,
+      "valid": "True"
+    },
+    "text_length": {
+      "min": 3,
+      "max": 2070,
+      "mean": 134.30717703349282,
+      "valid": "True"
+    }
+  },
+  "missing_checks": {
+    "placeName": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "placeAddress": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "provider": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "reviewText": {
+      "missing_count": 1,
+      "missing_percentage": 0.1,
+      "is_critical": true
+    },
+    "reviewDate": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "reviewRating": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": true
+    },
+    "authorName": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "text_length": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "sentiment": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    },
+    "restaurant_avg_rating": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "is_critical": false
+    }
+  },
+  "duplicate_checks": {
+    "duplicate_authorName": 51,
+    "duplicate_reviewText": 384,
+    "exact_duplicates": 2
+  },
+  "validation_timestamp": "2025-12-06T07:50:58.596436"
+}

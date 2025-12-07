@@ -1,0 +1,6 @@
+artifact_location: file:///E:/Masters/MLOps/echo-ai/mlruns/136823257234928231
+creation_time: 1763458130931
+experiment_id: '136823257234928231'
+last_update_time: 1763458130931
+lifecycle_stage: active
+name: echoai_sentiment_analysis_tuning

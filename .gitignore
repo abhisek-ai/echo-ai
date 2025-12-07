@@ -1,0 +1,8 @@
+data/raw/*.csv
+data/processed/*.csv
+logs/
+__pycache__/
+*.pyc
+.env
+airflow.db
+airflow-webserver.pid
