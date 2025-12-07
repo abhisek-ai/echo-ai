@@ -1,0 +1,12 @@
+{
+  "model_type": "LogisticRegression",
+  "best_params": {
+    "C": 0.22006031324966174,
+    "penalty": "l1",
+    "solver": "saga",
+    "max_iter": 516,
+    "class_weight": "balanced"
+  },
+  "best_score": 1.0,
+  "n_trials": 50
+}

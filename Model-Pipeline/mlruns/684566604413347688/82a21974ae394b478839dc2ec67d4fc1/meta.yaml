@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/Model-Pipeline/mlruns/684566604413347688/82a21974ae394b478839dc2ec67d4fc1/artifacts
+end_time: 1763457092256
+entry_point_name: ''
+experiment_id: '684566604413347688'
+lifecycle_stage: active
+run_id: 82a21974ae394b478839dc2ec67d4fc1
+run_name: LogisticRegression_20251118_041124
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763457084839
+status: 3
+tags: []
+user_id: hp

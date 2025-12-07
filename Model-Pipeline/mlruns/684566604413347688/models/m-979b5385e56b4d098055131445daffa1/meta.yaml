@@ -1,0 +1,10 @@
+artifact_location: file:///E:/Masters/MLOps/echo-ai/Model-Pipeline/mlruns/684566604413347688/models/m-979b5385e56b4d098055131445daffa1/artifacts
+creation_timestamp: 1763457102031
+experiment_id: '684566604413347688'
+last_updated_timestamp: 1763457105296
+model_id: m-979b5385e56b4d098055131445daffa1
+model_type: null
+name: LinearSVC
+source_run_id: 4f9941c0ea6c4579ae284977d76a9ddc
+status: 2
+status_message: null

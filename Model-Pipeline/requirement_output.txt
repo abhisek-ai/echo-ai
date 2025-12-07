@@ -1,0 +1,16 @@
+transformers>=4.35.0
+torch>=2.0.0
+accelerate>=0.24.0
+sentencepiece>=0.1.99
+protobuf>=3.20.0
+
+# API Server
+flask>=2.3.0
+flask-cors>=4.0.0
+
+# Optional optimizations for large models
+bitsandbytes>=0.41.0  # For 8-bit quantization
+
+# For better response generation
+einops>=0.7.0
+safetensors>=0.3.0

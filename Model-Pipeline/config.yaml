@@ -1,0 +1,32 @@
+# EchoAI Model Registry Configuration
+
+gcp:
+  project_id: "echo-ai-478802"  # CHANGE THIS
+  location: "us-central1"
+  bucket_name: "echoai-models"  # Will be created if doesn't exist
+
+model:
+  name: "echoai-review-sentiment"
+  framework: "sklearn"
+
+model_selection:
+  metric: "f1_score"  # Metric to use for selecting best model
+  
+validation_thresholds:
+  f1_score: 0.7
+  accuracy: 0.7
+  precision: 0.6
+  recall: 0.6
+
+bias_detection:
+  sensitive_features:
+    - "user_demographic"  # Replace with your actual features
+    - "product_category"
+    - "review_source"
+  max_difference: 0.1  # Maximum allowed performance difference between groups
+  block_on_bias: false  # Whether to block deployment if bias is detected
+
+ci_cd:
+  auto_deploy: false
+  notification_email: "team@example.com"
+  slack_webhook: ""  # Optional Slack webhook for notifications

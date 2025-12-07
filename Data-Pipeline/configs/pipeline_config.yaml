@@ -1,0 +1,31 @@
+# Data-Pipeline/configs/pipeline_config.yaml
+pipeline:
+  name: "EchoAI Review Processing Pipeline"
+  version: "1.0.0"
+  
+data:
+  raw_path: "data/raw/synthetic_reviews.csv"
+  processed_path: "data/processed/clean_reviews.csv"
+  features_path: "data/processed/features.csv"
+  
+preprocessing:
+  min_text_length: 10
+  max_text_length: 5000
+  remove_duplicates: true
+  
+validation:
+  check_nulls: true
+  check_ranges: true
+  check_duplicates: true
+  
+anomaly_detection:
+  outlier_threshold: 3
+  iqr_multiplier: 1.5
+  
+bias_detection:
+  positive_threshold: 0.7
+  negative_threshold: 0.5
+  
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

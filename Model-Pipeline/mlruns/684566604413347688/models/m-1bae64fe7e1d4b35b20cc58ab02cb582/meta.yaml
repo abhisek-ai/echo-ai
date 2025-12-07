@@ -1,0 +1,10 @@
+artifact_location: file:///E:/Masters/MLOps/echo-ai/Model-Pipeline/mlruns/684566604413347688/models/m-1bae64fe7e1d4b35b20cc58ab02cb582/artifacts
+creation_timestamp: 1763458766171
+experiment_id: '684566604413347688'
+last_updated_timestamp: 1763458770047
+model_id: m-1bae64fe7e1d4b35b20cc58ab02cb582
+model_type: null
+name: GradientBoosting
+source_run_id: 4ebd0f70b17c4ba096f751d60c2fd875
+status: 2
+status_message: null

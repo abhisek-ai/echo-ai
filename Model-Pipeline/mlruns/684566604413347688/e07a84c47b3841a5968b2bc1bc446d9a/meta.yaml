@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/Masters/MLOps/echo-ai/Model-Pipeline/mlruns/684566604413347688/e07a84c47b3841a5968b2bc1bc446d9a/artifacts
+end_time: 1763457101870
+entry_point_name: ''
+experiment_id: '684566604413347688'
+lifecycle_stage: active
+run_id: e07a84c47b3841a5968b2bc1bc446d9a
+run_name: GradientBoosting_20251118_041136
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763457096236
+status: 3
+tags: []
+user_id: hp
