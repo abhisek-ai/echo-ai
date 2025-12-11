@@ -27,25 +27,76 @@ EchoAI is a comprehensive MLOps implementation for review processing and analysi
 ## 📁 Complete Repository Structure
 ```
 echo-ai-main-3/
-├── Data-Pipeline/
-│   ├── dags/
-│   ├── scripts/
-│   ├── tests/
-│   └── configs/
-├── Model-Pipeline/
-│   ├── mlruns/
-│   └── results/
-├── Model-Deployment/
-│   ├── cloud/
-│   ├── edge/
-│   ├── monitoring/
-│   └── configs/
-├── monitoring/
-├── .github/workflows/
-├── data/
-├── models/
-├── docs/
-└── README.md
+├── Data-Pipeline/                 # Data processing pipeline
+│   ├── dags/                     # Airflow DAG definitions
+│   │   └── review_pipeline_dag.py
+│   ├── scripts/                  # Pipeline modules
+│   │   ├── data_acquisition.py   # Data fetching from APIs
+│   │   ├── preprocessing.py      # Data cleaning & transformation
+│   │   ├── feature_engineering.py # Feature creation
+│   │   ├── validation.py         # Data quality checks
+│   │   ├── bias_detection.py     # Bias analysis with slicing
+│   │   ├── anomaly_detection.py  # Outlier & anomaly detection
+│   │   └── push_to_registry.py   # Model registry integration
+│   ├── tests/                    # Comprehensive unit tests
+│   │   ├── test_preprocess.py
+│   │   ├── test_validation.py
+│   │   ├── test_bias_detection.py
+│   │   └── test_edge_cases.py
+│   └── configs/                  # Pipeline configurations
+│
+├── Model-Pipeline/                # ML model development
+│   ├── model_training.py         # Model training logic
+│   ├── model_validation.py       # Model evaluation
+│   ├── model_bias_detection.py   # Model fairness analysis
+│   ├── hyperparameter_tuning.py  # Hyperparameter optimization
+│   ├── sensitivity_analysis.py   # Feature importance analysis
+│   ├── model_registry.py         # Model versioning
+│   ├── inference_pipeline.py     # Inference implementation
+│   ├── response_generator.py     # Response generation logic
+│   ├── mlruns/                   # MLflow experiment tracking
+│   └── results/                  # Training results & metrics
+│
+├── Model-Deployment/              # Deployment & monitoring
+│   ├── cloud/                    # Cloud deployment
+│   │   ├── gcp_deploy.py        # GCP deployment (Vertex AI, GKE)
+│   │   └── kubernetes/           # K8s manifests
+│   ├── edge/                     # Edge deployment
+│   │   └── edge_deploy.py       # Edge device optimization
+│   ├── monitoring/               # Model monitoring
+│   │   └── model_monitoring.py  # Drift detection & alerts
+│   ├── scripts/                  # Deployment automation
+│   └── configs/                  # Deployment configurations
+│
+├── monitoring/                    # Monitoring & observability
+│   ├── langfuse_simple.py       # LLM monitoring integration
+│   ├── check_langfuse.py        # Monitoring validation
+│   └── test_langfuse.py         # Monitoring tests
+│
+├── .github/                      # CI/CD pipelines
+│   └── workflows/                # GitHub Actions workflows
+│       ├── ci.yml               # Continuous integration
+│       ├── cd.yml               # Continuous deployment
+│       └── retrain.yml          # Auto-retraining workflow
+│
+├── data/                         # Data storage (DVC tracked)
+│   ├── raw/                     # Raw data
+│   ├── processed/               # Processed data
+│   └── metrics/                 # Performance metrics
+│
+├── models/                       # Trained models
+│   ├── best_model.pkl           # Best performing model
+│   └── LogisticRegression_tuning/ # Model artifacts
+│
+├── docs/                         # Documentation
+│   ├── Project_Scoping_EchoAI.pdf
+│   └── bias_report.md
+│
+├── dvc.yaml                      # DVC pipeline configuration
+├── requirements.txt              # Python dependencies
+├── Dockerfile                    # Container configuration
+├── Makefile                      # Build automation
+└── README.md                     # This file
 ```
 
 ## 🚀 Quick Start
@@ -128,16 +179,6 @@ python Model-Deployment/deploy.py --type cloud
 - Real-time drift detection
 - Automated retraining triggers
 - Email/Slack alerting
-
-## 📈 Model Performance
-
-| Metric | Value |
-|--------|-------|
-| Accuracy | 92.3% |
-| Precision | 91.7% |
-| Recall | 93.1% |
-| F1 Score | 92.4% |
-| Latency (P95) | 45ms |
 
 ## 🧪 Testing
 ```bash
