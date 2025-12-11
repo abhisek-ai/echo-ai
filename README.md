@@ -14,13 +14,13 @@ EchoAI is a comprehensive MLOps implementation for review processing and analysi
 ```
 ┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
 │  Data Pipeline  │────▶│  Model Pipeline  │────▶│   Deployment    │
-│   (Airflow)     │     │    (MLflow)      │     │  (GCP/Edge)    │
+│   (Airflow)     │     │    (MLflow)      │     │  (GCP/Edge)     │
 └─────────────────┘     └──────────────────┘     └─────────────────┘
          │                       │                         │
          ▼                       ▼                         ▼
    ┌──────────┐           ┌──────────┐            ┌──────────────┐
    │   DVC    │           │ MLflow   │            │  Monitoring  │
-   │  Storage │           │ Tracking │            │  (Langfuse)  │
+   │  Storage │           │ Tracking │            │  (MLflow)    │
    └──────────┘           └──────────┘            └──────────────┘
 ```
 
