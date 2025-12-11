@@ -1,0 +1,39 @@
+# Dockerfile for Cloud Run deployment
+FROM python:3.9-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements first for better caching
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Add Cloud Run specific requirements
+RUN pip install --no-cache-dir \
+    gunicorn==20.1.0 \
+    flask==2.3.2 \
+    google-cloud-storage==2.10.0 \
+    google-cloud-logging==3.5.0
+
+# Copy application code
+COPY Model-Pipeline/ /app/Model-Pipeline/
+COPY models/ /app/models/
+COPY app.py .
+
+# Create non-root user
+RUN useradd -m -u 1000 appuser && \
+    chown -R appuser:appuser /app
+USER appuser
+
+# Cloud Run expects service on port 8080
+ENV PORT=8080
+EXPOSE 8080
+
+# Use gunicorn for production
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 app:app
