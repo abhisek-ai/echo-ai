@@ -1,4 +1,4 @@
-# EchoAI - 
+# EchoAI - Smart Review Responses
 
 ## Team Members
 - Abhisek Mallick
@@ -10,7 +10,7 @@
 ## Project Overview
 EchoAI is a comprehensive MLOps implementation for review processing and analysis, demonstrating industry best practices across the entire ML lifecycle - from data pipeline to model deployment with continuous monitoring and automated retraining.
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 ```
 ┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
 │  Data Pipeline  │────▶│  Model Pipeline  │────▶│   Deployment    │
@@ -24,9 +24,9 @@ EchoAI is a comprehensive MLOps implementation for review processing and analysi
    └──────────┘           └──────────┘            └──────────────┘
 ```
 
-## 📁 Complete Repository Structure
+## Complete Repository Structure
 ```
-echo-ai-main-3/
+echo-ai/
 ├── Data-Pipeline/                 # Data processing pipeline
 │   ├── dags/                     # Airflow DAG definitions
 │   │   └── review_pipeline_dag.py
@@ -99,7 +99,7 @@ echo-ai-main-3/
 └── README.md                     # This file
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.9-3.13
@@ -133,7 +133,7 @@ dvc init
 dvc pull
 ```
 
-## 📊 Pipeline Execution
+## Pipeline Execution
 
 ### Data Pipeline
 ```bash
@@ -157,7 +157,7 @@ mlflow ui --port 5000
 python Model-Deployment/deploy.py --type cloud
 ```
 
-## 🔍 Key Features
+## Key Features
 
 ### Data Pipeline
 - Automated Orchestration with Airflow DAG
@@ -180,25 +180,24 @@ python Model-Deployment/deploy.py --type cloud
 - Automated retraining triggers
 - Email/Slack alerting
 
-## 🧪 Testing
+## Testing
 ```bash
 pytest -v
 pytest --cov=. --cov-report=html
 ```
 
-## 🔄 CI/CD Pipeline
+## CI/CD Pipeline
 
 - **CI**: Automated testing on every push
 - **CD**: Deployment to staging/production
 - **Retraining**: Auto-triggered on drift detection
 
-## 📊 Monitoring Dashboard
+## Monitoring Dashboard
 
-- Prometheus: `http://localhost:8000/metrics`
 - MLflow UI: `http://localhost:5000`
 - Custom dashboard: `monitoring_dashboard.html`
 
-## 🎯 Evaluation Criteria Met
+## Evaluation Criteria Met
 
 | Requirement | Status | Implementation |
 |------------|--------|---------------|
@@ -217,7 +216,7 @@ pytest --cov=. --cov-report=html
 | Model Deployment | ✅ | Cloud & edge |
 | Monitoring | ✅ | Drift detection |
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Airflow Python Version
 Airflow requires Python 3.9-3.11. For Python 3.13, use `run_pipeline.py`
@@ -234,6 +233,6 @@ export GOOGLE_APPLICATION_CREDENTIALS=path/to/service-account.json
 gcloud auth application-default login
 ```
 
-## 📹 Demo Video
+## Demo Video
 
 [Video Link - To be added]
