@@ -1,4 +1,4 @@
-# EchoAI - End-to-End MLOps Project
+# EchoAI - 
 
 ## Team Members
 - Abhisek Mallick
