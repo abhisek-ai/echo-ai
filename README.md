@@ -57,16 +57,16 @@ echo-ai/
 │   ├── mlruns/                   # MLflow experiment tracking
 │   └── results/                  # Training results & metrics
 │
-├── Model-Deployment/              # Deployment & monitoring
-│   ├── cloud/                    # Cloud deployment
-│   │   ├── gcp_deploy.py        # GCP deployment (Vertex AI, GKE)
-│   │   └── kubernetes/           # K8s manifests
-│   ├── edge/                     # Edge deployment
-│   │   └── edge_deploy.py       # Edge device optimization
-│   ├── monitoring/               # Model monitoring
-│   │   └── model_monitoring.py  # Drift detection & alerts
-│   ├── scripts/                  # Deployment automation
-│   └── configs/                  # Deployment configurations
+Model-Deployment/
+├── cloudrun/
+│   ├── cloudrun_deploy.py      # Main deployment script
+│   ├── app.py                  # Flask application
+│   ├── Dockerfile              # Container configuration
+│   ├── requirements.txt        # Python dependencies
+│   ├── cloudbuild.yaml        # Cloud Build configuration
+│   └── deploy-cloudrun.sh     # Shell deployment script
+├── configs/
+│   └── cloudrun_config.yaml   # Deployment configuration
 │
 ├── monitoring/                    # Monitoring & observability
 │   ├── langfuse_simple.py       # LLM monitoring integration
