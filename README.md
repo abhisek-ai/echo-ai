@@ -11,18 +11,8 @@
 EchoAI is a comprehensive MLOps implementation for review processing and analysis, demonstrating industry best practices across the entire ML lifecycle - from data pipeline to model deployment with continuous monitoring and automated retraining.
 
 ## Architecture Overview
-```
-┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
-│  Data Pipeline  │────▶│  Model Pipeline  │────▶│   Deployment    │
-│   (Airflow)     │     │    (MLflow)      │     │  (GCP/Edge)     │
-└─────────────────┘     └──────────────────┘     └─────────────────┘
-         │                       │                         │
-         ▼                       ▼                         ▼
-   ┌──────────┐           ┌──────────┐            ┌──────────────┐
-   │   DVC    │           │ MLflow   │            │  Monitoring  │
-   │  Storage │           │ Tracking │            │  (MLflow)    │
-   └──────────┘           └──────────┘            └──────────────┘
-```
+![WhatsApp Image 2025-12-11 at 23 27 36](https://github.com/user-attachments/assets/25f0dbba-8494-4170-91d4-2007e0c1945f)
+
 
 ## Complete Repository Structure
 ```
