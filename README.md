@@ -14,6 +14,13 @@ EchoAI is a comprehensive MLOps implementation for review processing and analysi
 ![WhatsApp Image 2025-12-11 at 23 27 36](https://github.com/user-attachments/assets/25f0dbba-8494-4170-91d4-2007e0c1945f)
 
 
+
+
+## Demo Video
+https://youtu.be/x5Bfk61EnVc?si=2qDNeBgLQJILufHp
+
+
+
 ## Complete Repository Structure
 ```
 echo-ai/
@@ -223,6 +230,6 @@ export GOOGLE_APPLICATION_CREDENTIALS=path/to/service-account.json
 gcloud auth application-default login
 ```
 
-## Demo Video
+
 
 [Video Link - To be added]
