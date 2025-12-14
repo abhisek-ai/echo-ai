@@ -17,7 +17,7 @@ EchoAI is a comprehensive MLOps implementation for review processing and analysi
 [Watch Demo on YouTube](https://youtu.be/x5Bfk61EnVc?si=K9qxEuzcDRprelvk)
 
 ## Try it here: 
-(https://echoai-streamlit-986088630884.us-central1.run.app)
+https://echoai-streamlit-986088630884.us-central1.run.app
 
 ## Complete Repository Structure
 ```
