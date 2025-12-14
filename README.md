@@ -8,7 +8,7 @@
 - Ragul Narayanan Magesh
 
 ## Project Overview
-EchoAI is a comprehensive MLOps implementation for review processing and analysis, demonstrating industry best practices across the entire ML lifecycle - from data pipeline to model deployment with continuous monitoring and automated retraining.
+EchoAI is a comprehensive MLOps implementation for review processing and analysis, demonstrating industry best practices across the entire ML lifecycle - from data pipeline to model deployment with continuous monitoring and automated retraining. The solution leverages Google Cloud Platform's native services including Cloud Composer for orchestration and BigQuery for data warehousing.
 
 ## Architecture Overview
 ![Architecture Diagram](https://github.com/user-attachments/assets/25f0dbba-8494-4170-91d4-2007e0c1945f)
@@ -101,6 +101,15 @@ echo-ai/
 - Python 3.9-3.13
 - Docker
 - Google Cloud SDK
+- Service Account with appropriate IAM roles
+- GCP Project with enabled APIs:
+  Cloud Composer API
+  BigQuery API
+  Cloud Run API
+  Artifact Registry API
+  Cloud Monitoring API
+  Cloud Logging API
+      
 - DVC
 - Git
 
